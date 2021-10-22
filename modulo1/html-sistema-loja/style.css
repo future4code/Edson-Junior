@@ -1,0 +1,49 @@
+#cabecalho { 
+    background-color: rgba(32, 32, 32, 0.753);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+body{
+    background-color:rgba(30, 23, 49, 0.10);
+}
+
+#midias-sociais{
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+.add-prod-layout{
+    max-width: 330px;
+    align-self: center
+}
+
+td{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    
+}
+
+#produto{
+    max-width: 30%;
+    max-height:30%;
+}
+.tabela{
+    text-align: center;
+    padding: 0%;
+}
+
+#foto-produto{
+    max-width: 400px;
+}
+th{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+footer{
+
+}
