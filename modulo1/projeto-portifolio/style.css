@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #2E5339cc;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20%;
+
+}
+
+body{
+    max-height: 60%;
+    background-color: #BBADA0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.container-sobre-mim{
+    max-height: 60%;
+
+}
+
+
+
+footer {
+    max-height: 10%;
+    background-color: #564256;
+    text-align: center;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+
+}
+
+
+.social-images>a>img{
+
+    max-width: 3%;
+    max-height: 3%;
+}
+
+button:hover{
+    background-color: rgba(67, 77, 95, 0.349);
+}
+
+.container-expertise{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-projetos{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
