@@ -4,9 +4,26 @@
 
 
 // EXERCÍCIO 01
-function retornaTamanhoArray(array) {
-   return array.length
+function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+    // Escreva seu código aqui
+    
+    for (let num of arrayDeNumeros) {
+        let contador = 0
+        if (num === numeroEscolhido) {
+            contador = contador + 1
+        }
+        return contador
+    }
+    if (contador === 0) {
+        return "Número não encontrado"
+    }
+    else {
+        return contador
+    }
 }
+const array = [1, 3, 4, 4, 5, 6, 3]
+const numero = 4
+console.log(contaOcorrencias(array, numero))
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
