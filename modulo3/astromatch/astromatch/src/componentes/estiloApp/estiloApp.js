@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Header = styled.div`
     display: flex;
-    /* margin-top:3%; */
     justify-content: space-between;
 `
 export const AppContainer = styled.div`
