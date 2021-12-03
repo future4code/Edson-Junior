@@ -1,4 +1,4 @@
-# landing-page-template
+# Projeto astromatch
 # Projeto realizado pelo aluno Edson Batista Magnini Junior 
 # Projeto contempla Like, Deslike função getMatches, getProfile e clear 
 # Tela de perfis
