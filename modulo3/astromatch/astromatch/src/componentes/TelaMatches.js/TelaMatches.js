@@ -1,4 +1,4 @@
-import { MatchesContainer } from "./estiloTelaMatches"
+import { MatchesContainer, MatchPhoto } from "./estiloTelaMatches"
 
 
 const TelaMatches = (props) => {
@@ -8,7 +8,7 @@ const TelaMatches = (props) => {
 
     return (
         <MatchesContainer>            
-            <img src={props.matchPhoto} alt={'User photo'}/>{props.matchName}
+            <MatchPhoto src={props.matchPhoto} alt={'User photo'}/>{props.matchName}
         </MatchesContainer>
     )
 }
