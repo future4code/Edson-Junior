@@ -1,4 +1,5 @@
 
+import { useEffect } from "react"
 import { useHistory } from "react-router-dom"
 import { HeaderContainer, HeaderLogin, HeaderLogo } from "./stylesHeader"
 
@@ -11,12 +12,19 @@ const Header = () => {
         history.push("/login")
     }
     
+    useEffect(() => {
+        
+        
+    },[])
 
     return (
         <HeaderContainer>
             <HeaderLogo>
                 LabeX
             </HeaderLogo>
+            {/* {token === null? <HeaderLogin onClick={goToLoginPage}>
+                Login
+            </HeaderLogin> : <p>{userEmail} </p> } */}
             <HeaderLogin onClick={goToLoginPage}>
                 Login
             </HeaderLogin>

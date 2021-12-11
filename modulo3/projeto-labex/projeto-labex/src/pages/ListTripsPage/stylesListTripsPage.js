@@ -15,3 +15,6 @@ export const TripsButton = styled.button`
 export const TripsListContainer = styled.div`
 
 `
+export const TripListCard = styled.div`
+
+`
