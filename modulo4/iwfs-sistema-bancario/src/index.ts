@@ -162,7 +162,7 @@ app.put("/deposito", (req: Request, res: Response) => {
                 usuarios[i].extratoDados.push({
                     valor: valor,
                     dataDeTransacao: dataAtual,
-                    descricao: "Deposíto bancário."
+                    descricao: "depósito bancário."
                 })
                 buscaUsuario.push(usuarios[i])
                 isUsuarioFound = true
