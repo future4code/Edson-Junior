@@ -1,0 +1,9 @@
+POST  http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "cep": "03114-000",
+    "email": "edson.magnini.dev@gmail.com",
+    "number": 1252,
+    "complement": "Próximo à padaria Monte Libano"
+}
