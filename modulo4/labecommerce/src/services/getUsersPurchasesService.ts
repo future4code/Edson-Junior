@@ -1,5 +1,4 @@
 import axios from "axios"
-import { Purchase } from "../types/types"
 
 const baseUrl = "http://localhost:3003"
 
