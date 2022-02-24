@@ -1,4 +1,4 @@
-POST http://localhost:3003/users/signup
+POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 ###
 
-POST http://localhost:3003/users/signup
+POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
@@ -19,8 +19,16 @@ Content-Type: application/json
     "password": "1234567"
 }
 ###
+POST http://localhost:3003/user/login
+Content-Type: application/json
 
-POST http://localhost:3003/users/login
+{
+    "email": "lucas@hotmail.com",
+    "password": "1234567"
+}
+###
+
+POST http://localhost:3003/user/login
 Content-Type: application/json
 
 {
@@ -29,8 +37,32 @@ Content-Type: application/json
 }
 ###
 
-POST http://localhost:3003/users/profile
+POST http://localhost:3003/user/profile
 Content-Type: application/json
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTU2OTM4MywiZXhwIjoxNjQ1NTY5NDQzfQ.NDvIPjti60hIaECCzSY7f0m25GGX9fuDCWWDfng0FAM
 
+###
+POST http://localhost:3003/recipe
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkxODhlZWI3LTg4NjQtNDI5ZC1hM2NjLWIzOTJlMjE0NzA0MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU3MjExOTMsImV4cCI6MTY0NTcyMTc5M30.czXTk09hcWrF7bZFmS-KV52yQOBhYvbWxsfvcwL4eFA
 
+{
+    "title": "Bolo de limão",
+    "description": "Bolo e limão"
+}
+
+###
+
+GET http://localhost:3003/recipe/9a976e94-e4d7-4259-9cc3-3d073efb8fda
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTcyMTk4MiwiZXhwIjoxNjQ1NzIyNTgyfQ.f7640-0ueEKZm1fz3nfskwqzcl7qp-uzPZa8r2OpR90
+
+###
+
+POST http://localhost:3003/user/follow
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkxODhlZWI3LTg4NjQtNDI5ZC1hM2NjLWIzOTJlMjE0NzA0MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU3NDM2MjQsImV4cCI6MTY0NTc0NDIyNH0.bPnvvFr7c9UN-dfjbUH62Iu48XSQNu_f98DY-82S2-0
+
+{
+    "userId": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTc0MzY4NCwiZXhwIjoxNjQ1NzQ0Mjg0fQ.BDrk68arMSw7KuaCBy6qEEhWtMNoMbCbI3Zy8TNTg_4"
+}

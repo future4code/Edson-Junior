@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
-const expiresIn = "1min";
+const expiresIn = "10min";
 export class jsonWebToken {
     tokenGenerate(id: string, role: string): string {
         const token = sign(

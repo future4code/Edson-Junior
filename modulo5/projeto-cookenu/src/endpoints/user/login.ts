@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { UserDatabase } from "../data/userDatabase";
-import { HashManager } from "../services/HashManager";
-import { jsonWebToken } from "../services/JsonWebToken";
+import { UserDatabase } from "../../data/user/userDatabase";
+import { HashManager } from "../../services/HashManager";
+import { jsonWebToken } from "../../services/JsonWebToken";
 
 
 export const login = async (req: Request, res: Response) => {

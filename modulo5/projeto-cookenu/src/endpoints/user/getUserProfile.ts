@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { UserDatabase } from "../data/userDatabase";
-import { User } from "../entities/users";
-import { jsonWebToken } from "../services/JsonWebToken";
+import { UserDatabase } from "../../data/user/userDatabase";
+import { User } from "../../entities/users/users";
+import { jsonWebToken } from "../../services/JsonWebToken";
 
 export const getUserProfile = async (req: Request, res: Response) => {
     try {

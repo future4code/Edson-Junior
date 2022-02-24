@@ -1,5 +1,5 @@
-import { User } from "../entities/users";
-import { BaseDatabase } from "./BaseDatabase";
+import { User } from "../../entities/users/users";
+import { BaseDatabase } from "../BaseDatabase";
 
 export class UserDatabase extends BaseDatabase {
     private static tableName = "User"

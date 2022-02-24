@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { UserDatabase } from "../data/userDatabase";
-import { User } from "../entities/users";
-import { HashManager } from "../services/HashManager";
-import { idGenerator } from "../services/idGenerator";
-import { jsonWebToken } from "../services/JsonWebToken";
+import { UserDatabase } from "../../data/user/userDatabase";
+import { User } from "../../entities/users/users";
+import { HashManager } from "../../services/HashManager";
+import { idGenerator } from "../../services/idGenerator";
+import { jsonWebToken } from "../../services/JsonWebToken";
 
 
 export const createUser = async (req: Request, res: Response) => {
