@@ -1,0 +1,36 @@
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Edson",
+    "email": "edson@hotmail.com",
+    "role": "ADMIN",
+    "password": "123456"
+}
+###
+
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Lucas",
+    "email": "lucas@hotmail.com",
+    "role": "NORMAL",
+    "password": "1234567"
+}
+###
+
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "edson@hotmail.com",
+    "password": "123456"
+}
+###
+
+POST http://localhost:3003/users/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTU2OTM4MywiZXhwIjoxNjQ1NTY5NDQzfQ.NDvIPjti60hIaECCzSY7f0m25GGX9fuDCWWDfng0FAM
+
+
