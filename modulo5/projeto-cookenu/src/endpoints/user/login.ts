@@ -16,11 +16,11 @@ export const login = async (req: Request, res: Response) => {
 
         const [user] = await database.getUserByEmail(email)
 
-        const passwordIsCorrect: boolean = user && new HashManager().compareHash(password,user.password)
+        // const passwordIsCorrect: boolean = user && new HashManager().compareHash(password,user.password)
 
-        if (!user || !passwordIsCorrect) {
-            throw new Error("Invalid password");
-        }
+        // if (!user || !passwordIsCorrect) {
+        //     throw new Error("Invalid password");
+        // }
 
 
         const token = new jsonWebToken().tokenGenerate(user.id, user.role)

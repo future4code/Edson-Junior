@@ -15,7 +15,7 @@ export const getUserProfile = async (req: Request, res: Response) => {
             throw new Error("Invalid token or not inputed")
         }
         
-        console.log(tokenData)
+
         if (tokenData.role !== "NORMAL") {
             res.statusCode = 403
             res.statusMessage = "This user is anauthorized."

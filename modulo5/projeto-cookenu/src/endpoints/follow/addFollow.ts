@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { FollowBaseDatabase } from "../../data/follow/FollowBaseDatabase";
+
 import { Follow } from "../../entities/follow/follow";
 import { jsonWebToken } from "../../services/JsonWebToken";
 
@@ -27,8 +28,10 @@ export const addFollow = async (
         }
 
         const follow = new Follow(followerId.id, followedId.id)
+
         await new FollowBaseDatabase().addFollow(follow)
-        res.status(200).send("Sucess.")
+
+        res.status(200).send("Success.")
     } catch (error: any) {
         res.status(400).send(error.message)
     }

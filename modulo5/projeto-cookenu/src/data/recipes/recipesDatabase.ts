@@ -13,8 +13,24 @@ export class RecipesDatabase extends BaseDatabase {
             create_at: input.getCreateAt(),
             user_id: input.getUserId(),
         })
+
     getRecipeById = (recipeId: string) => BaseDatabase
         .connection(RecipesDatabase.tableName)
         .select("*")
         .where("id", recipeId)
+
+    editRecipe = (id: string, description: string) => BaseDatabase
+        .connection(RecipesDatabase.tableName)
+        .update("description", description)
+        .where("id", id)
+
+    deleteRecipe = (id: string) => BaseDatabase
+        .connection(RecipesDatabase.tableName)
+        .delete()
+        .where("id", id)
+    
+    deleteAllRecipes = (userId: string) => BaseDatabase
+        .connection(RecipesDatabase.tableName)
+        .delete()
+        .where("user_id", userId)
 }

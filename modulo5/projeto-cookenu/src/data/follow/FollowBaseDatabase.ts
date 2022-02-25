@@ -7,7 +7,15 @@ export class FollowBaseDatabase extends BaseDatabase {
     addFollow = (input: Follow) => BaseDatabase
         .connection(FollowBaseDatabase.tableName)
         .insert({
-            follower: input.getFollowed(),
+            follower: input.getFollower(),
             followed: input.getFollowed()
         })
+    getFollowById = (id: string) => BaseDatabase
+        .connection(FollowBaseDatabase.tableName)
+        .where("follower", id)
+    
+    deleteFollow = (id: string) => BaseDatabase
+        .connection(FollowBaseDatabase.tableName)
+        .delete()
+        .where("follower", id)
 }
