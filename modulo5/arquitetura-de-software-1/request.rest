@@ -1,0 +1,42 @@
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "email": "edson@hotmail.com",
+    "name": "Edson",    
+    "password": "123456",
+    "role": "ADMIN"
+}
+
+###
+
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "email": "joão@hotmail.com",
+    "name": "joão",    
+    "password": "123456",
+    "role": "normal"
+}
+
+###
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email": "edson@hotmail.com",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:3003/all
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJmYWM1NzQxLWViODMtNDU5OS04ZmRmLTM3ZjEyYWM5YTk4YyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NjY5MTM4NCwiZXhwIjoxNjQ2NjkxOTg0fQ.rW3bijH-_SOccbeCM58DSMM1u8S4DZYmjhYAqsnzH0k
+
+###
+
+DELETE http://localhost:3003/127db72a-1197-4c74-ab97-2873d3500a99
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJmYWM1NzQxLWViODMtNDU5OS04ZmRmLTM3ZjEyYWM5YTk4YyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NjY5NDc5MCwiZXhwIjoxNjQ2Njk1MzkwfQ.EgGV-_ardxofgqBmrOv6eF2tqoRKaiTdpCXr02TXykE
