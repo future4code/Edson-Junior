@@ -1,0 +1,149 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Edson",
+    "email": "edson@hotmail.com",
+    "role": "ADMIN",
+    "password": "123456"
+}
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Edson Teste Pass",
+    "email": "edson_magnini@hotmail.com",
+    "role": "ADMIN",
+    "password": "123456"
+}
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Jonas",
+    "email": "jonas@hotmail.com",
+    "role": "NORMAL",
+    "password": "123456"
+}
+###
+
+
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Lucas",
+    "email": "lucas@hotmail.com",
+    "role": "NORMAL",
+    "password": "1234567"
+}
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "jonas@hotmail.com",
+    "password": "123456"
+}
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "lucas@hotmail.com",
+    "password": "1234567"
+}
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "edson_magnini@hotmail.com",
+    "password": "0.46406357880513016"
+}
+###
+
+POST http://localhost:3003/user/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTU2OTM4MywiZXhwIjoxNjQ1NTY5NDQzfQ.NDvIPjti60hIaECCzSY7f0m25GGX9fuDCWWDfng0FAM
+
+###
+POST http://localhost:3003/recipe
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU2MGUxMTVhLTZiYWMtNGUzOC1hZjlkLTUxOGM3Zjk0YTg3NSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MjM0NTUsImV4cCI6MTY0NTgyNDA1NX0.GbVw9SJWtYL_nrWo2oBghEMvRjoGRCHo9QUr03W3zv0
+
+{
+    "title": "Bolo de abacaxi",
+    "description": "Bolo e abacaxi"
+}
+
+###
+
+GET http://localhost:3003/recipe/9a976e94-e4d7-4259-9cc3-3d073efb8fda
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTcyMTk4MiwiZXhwIjoxNjQ1NzIyNTgyfQ.f7640-0ueEKZm1fz3nfskwqzcl7qp-uzPZa8r2OpR90
+
+###
+
+POST http://localhost:3003/user/follow
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU2MGUxMTVhLTZiYWMtNGUzOC1hZjlkLTUxOGM3Zjk0YTg3NSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MjM0NTUsImV4cCI6MTY0NTgyNDA1NX0.GbVw9SJWtYL_nrWo2oBghEMvRjoGRCHo9QUr03W3zv0
+
+{
+    "userId": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZjQyYjVjLTQ1MDgtNGQxYS1iMGZkLTlmOTM1Nzc4OWI5NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTgyMzM4MywiZXhwIjoxNjQ1ODIzOTgzfQ.FFLmkDNjf6ppCuduDHp38XTAFGywV4b6OY242qd243g"
+}
+
+###
+GET http://localhost:3003/user/feed
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkxODhlZWI3LTg4NjQtNDI5ZC1hM2NjLWIzOTJlMjE0NzA0MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MTYxOTcsImV4cCI6MTY0NTgxNjc5N30.2NDLRRt-3si5-yO5cB0wUrhy1dhkVMZeudmFa6LEzWw
+
+###
+POST http://localhost:3003/recipe/edit
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkxODhlZWI3LTg4NjQtNDI5ZC1hM2NjLWIzOTJlMjE0NzA0MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MTg3MzYsImV4cCI6MTY0NTgxOTMzNn0.heI2sfZT-K1DV6LhJoZY_vLCsRh4L_PlfxfS4mW_e6g
+
+{
+    "id": "124babed-4698-4f76-8bb5-802e0c100512",
+    "description": "Bolo de avelã"
+}
+###
+DELETE  http://localhost:3003/recipe/delete
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkxODhlZWI3LTg4NjQtNDI5ZC1hM2NjLWIzOTJlMjE0NzA0MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MjEzODEsImV4cCI6MTY0NTgyMTk4MX0.L1H5GrlYLhcc_WMjFMNuzCydfSp7xRdE1fNPSGvoeS4
+
+{
+    "id": "ec90d3c8-f0d2-44d0-9c93-eb44ab2b2625"
+}
+
+###
+DELETE  http://localhost:3003/user/delete
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU2MGUxMTVhLTZiYWMtNGUzOC1hZjlkLTUxOGM3Zjk0YTg3NSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MjM4NzYsImV4cCI6MTY0NTgyNDQ3Nn0.7amaE6HyRUxtBYmyfputX3qJbCpm4QmJfbLmUBIMQYI
+
+{
+    "id": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU2MGUxMTVhLTZiYWMtNGUzOC1hZjlkLTUxOGM3Zjk0YTg3NSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NDU4MjM4NzYsImV4cCI6MTY0NTgyNDQ3Nn0.7amaE6HyRUxtBYmyfputX3qJbCpm4QmJfbLmUBIMQYI"
+}
+
+###
+POST http://localhost:3003/user/forgotPassword
+Content-Type: application/json
+
+{
+    "email": "edson_magnini@hotmail.com"
+}
+
+###
+POST http://localhost:3003/user/changePassword
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0OTY4ODVjLTJiNmEtNDY5OC1hNThkLTU4ZWM3MmUyYmY3YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NTgzMTAxMCwiZXhwIjoxNjQ1ODMxNjEwfQ.eMkDUgebaBnFd59MO1as0y5CKjxRQ5in8Am2ppiLalE
+
+{
+    "email": "edson_magnini@hotmail.com",
+    "password": "lupalinda"
+}
+
